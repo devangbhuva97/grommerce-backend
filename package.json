@@ -4,7 +4,8 @@
   "description": "Backend repository for Grommerce application",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js --exec babel-node"
+    "start": "nodemon app.js --exec babel-node",
+    "test": "mocha ./test --recursive"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "@babel/core": "^7.1.2",
     "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.4"
   }
 }
