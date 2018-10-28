@@ -1,0 +1,29 @@
+{
+  "name": "grommerce",
+  "version": "1.0.0",
+  "description": "Grommerce backend repository",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.16.7",
+    "nodemon": "^1.18.4",
+    "prisma": "^1.19.0",
+    "prisma-binding": "^2.1.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grommerce/grommerce-backend.git"
+  },
+  "author": "reeversedev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grommerce/grommerce-backend/issues"
+  },
+  "homepage": "https://github.com/Grommerce/grommerce-backend#readme"
+}
