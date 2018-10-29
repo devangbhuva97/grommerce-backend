@@ -1,0 +1,26 @@
+type Product {
+  id: ID! @unique
+  name: String!
+  title: String!
+  description: String!
+  manufacture_date: DateTime!
+  expire_date: DateTime
+  price: Int!
+  category: Category!
+  manufacturer: Manufacturer!
+  quantity: Quantity!
+  volume: Volume
+}
+type Category {
+  id: ID! @unique
+  name: String!
+}
+type Manufacturer {
+  id: ID! @unique
+}
+type Quantity {
+  id: ID! @unique
+}
+type Volume {
+  id: ID! @unique
+}
