@@ -1,26 +1,53 @@
-type Product {
-  id: ID! @unique
-  name: String!
-  title: String!
-  description: String!
-  manufacture_date: DateTime!
-  expire_date: DateTime
-  price: Int!
-  category: Category!
-  manufacturer: Manufacturer!
-  quantity: Quantity!
-  volume: Volume
-}
 type Category {
   id: ID! @unique
   name: String!
 }
+type Product {
+  id: ID! @unique
+  category: Category!
+  manufacturer: Manufacturer!
+  name: String!
+  title: String!
+  description: String!
+  manufactureDate: DateTime!
+  expireDate: DateTime!
+  price: Float!
+}
 type Manufacturer {
   id: ID! @unique
+  name: String!
+  address: Address!
+  contactNo: String! @unique
+  email: String! @unique
+  website: String @unique
 }
-type Quantity {
+type Seller {
   id: ID! @unique
+  name: String!
+  address: Address!
+  contactNo: String! @unique
+  email: String! @unique
+  website: String @unique
 }
-type Volume {
+type Address {
   id: ID! @unique
+  line1: String!
+  line2: String
+  city: String!
+  state: String!
+  country: String!
+  pincode: Int!
+  gPlusCode: String! @unique
+}
+type SellingProduct {
+  id: ID! @unique
+  seller: Seller!
+  product: Product!
+  quantity: Float!
+  unit: Unit!
+}
+type Unit {
+  id: ID! @unique
+  name: String! @unique
+  sortName: String! @unique
 }
