@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const expressGraphQL = require("express-graphql");
+const schema = require("./schema/schema");
 require("dotenv").config();
 
 mongoose.Promise = global.Promise;
@@ -17,7 +18,7 @@ const app = express();
 app.use(
   "/graphql",
   expressGraphQL({
-    schema,
+    schema: schema,
     graphiql: true
   })
 );
