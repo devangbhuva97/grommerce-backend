@@ -7,7 +7,8 @@ const manufacturerSchema = new Schema({
   addressId: String,
   contactNo: Number,
   email: String,
-  website: String
+  website: String,
+  products: Array
 });
 
 module.exports = mongoose.model("Manufacturer", manufacturerSchema);

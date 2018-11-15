@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const productSchema = new Schema({
   _id: String,
-  category: String,
+  categoryId: String,
   name: String,
   title: String,
   description: String,
